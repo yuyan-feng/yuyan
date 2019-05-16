@@ -1,0 +1,197 @@
+/* Step 1: start with resetting some defaults */
+
+body{
+  font-family:KaiTi;
+}
+body {
+  margin: 0;
+  padding-top: 55px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+img{
+  border: 0;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+/* Step 2: background*/
+
+.backgroundimg{
+  margin: 0px;
+  background-size: 100% 100%;
+}
+
+.display-1{
+  color: #FFFFFFFF;
+  padding-bottom: 10px;
+}
+
+/* Step 3: center things inside the grid and clear some space around it by setting a device based max-width and margin*/
+
+.grid {
+  text-align: center;
+  max-width: 95vw;
+  margin: 2.5vw auto;
+}
+
+
+/* Step 4: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+
+.grid-item {
+  padding: 5px;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style-type:none;
+  overflow: hidden;
+}
+.demo-gallery > ul > li a {
+  border: 3px solid #FFF;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+/*li{white-space:nowrap;}
+
+img{
+  vertical-align: top;
+}*/
+/* Step 5: Add media queries (subjective) to make the whole grid resposive. */
+@media (min-width: 300px) {
+  .grid-item {
+    width: 50%;
+  }
+  .backgroundimg{
+    background-image: url("../img/heading.jpg");
+  }
+}
+
+
+@media (min-width: 500px) {
+  .grid-item {
+    width: 50%;
+  }
+  .backgroundimg{
+    background-image: url("../img/heading.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-item {
+    width: 31.333%;
+  }
+  .backgroundimg{
+    background-image: url("../img/heading1000.jpg");
+  }
+}
+
+@media (min-width: 1700px) {
+  .grid-item {
+    width: 25%;
+  }
+  .backgroundimg{
+    background-image: url("../img/heading1000.jpg");
+  }
+}
+
+@media (min-width: 2100px) {
+  .grid-item {
+    width: 20%;
+  }
+  .backgroundimg{
+    background-image: url("../img/heading1000.jpg");
+  }
+}
+
+ul > li > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+ul > li:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
