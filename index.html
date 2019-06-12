@@ -4,6 +4,10 @@
     <title>小宝的相册</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="img/htmlhead.png">
+    <link rel="icon" href="img/htmlhead.png">
+    <link rel="apple-touch-icon" href="/img/htmlhead.png">
+    <link rel="apple-touch-icon-precomposed" href="img/htmlhead.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Fontawesome -->
@@ -75,19 +79,6 @@ src: url('fonts/myfont.ttf');
 
 <div id="container" class="transitions-enabled infinite-scroll clearfix grid">
 
-<div style="display:none;" id="video1">
-    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
-        <source src="img/yunqi/yunqi_7.mp4" type="video/mp4">
-         Your browser does not support HTML5 video.
-    </video>
-</div>
-<div style="display:none;" id="video18">
-    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
-        <source src="img/manyue/manyue_61.mp4" type="video/mp4">
-         Your browser does not support HTML5 video.
-    </video>
-</div>
-
 <div class="grid demo-gallery">
 <ul id="video-gallery">
     <li class="grid-item" data-src="img/yunqi/yunqi.jpg" data-sub-html="第11周-2018年7月5日<br/>第一次超声波检查">
@@ -133,9 +124,23 @@ src: url('fonts/myfont.ttf');
     <li class="grid-item" data-src="img/baisui/baisui_302.jpg" data-sub-html="100天-2019年5月2日">
         <img src="img/baisui/baisui_s_302.jpg" class="img-thumbnail"/>
     </li>
+    <li class="grid-item" data-src="img/6yue/6yue_15.jpg" data-sub-html="3个月-2019年5月6日<br/>第一次出门">
+        <img src="img/6yue/6yue_s_15.jpg" class="img-thumbnail"/>
+    </li>
 </ul>
 </div>
-
+<div style="display:none;" id="video1">
+    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls>
+        <source src="img/yunqi/yunqi_7.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
+<div style="display:none;" id="video18">
+    <video class="lg-video-object lg-html5 video-js vjs-default-skin" controls>
+        <source src="img/manyue/manyue_61.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</div>
 </div>
 
 
