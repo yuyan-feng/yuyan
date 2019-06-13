@@ -1,0 +1,34 @@
+CACHE MANIFEST  
+# 2019-6-12 v1.0.0
+
+
+CACHE:  
+index.html
+yunqi.html
+chusheng.html
+manyue.html
+baisui.html
+css/index.css
+css/lightgallery.css
+fonts/lg.eot
+fonts/lg.svg
+fonts/lg.ttf
+fonts/lg.woff
+fonts/myfont.ttf
+img/heading.jpg
+img/heading1000.jpg
+img/htmlhead.png
+img/loading.gif
+img/play-button.png
+img/video-play.png
+img/vimeo-play.png
+js/index.js
+js/jquery.magnific-popup.min.js
+js/lg-autoplay.js
+js/lg-fullscreen.js
+js/lg-hash.js
+js/lg-pager.js
+js/lg-thumbnail.js
+js/lg-video.js
+js/lg-zoom.js
+js/lightgallery.min.js
