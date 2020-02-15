@@ -1,1 +1,3 @@
 https://cdn.jsdelivr.net/gh/yuyan-feng/yuyan/
+不支持加载超过20M的
+faststone photo  压缩15%  _s
